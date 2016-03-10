@@ -4,8 +4,10 @@
 <head>
   <!-- Define page meta tags for users browser and search engine robots -->
   <meta charset="utf-8">
-  <meta name="author" content="Michael Hancock">
   <meta name="robots" content="noimageindex">
+  <meta name="revisit-after" content="3 month">
+  <meta name="author" content="Michael Hancock">
+  <meta http-equiv="Cache-control" content="public">
   <meta name="description" content="Cocktail website - How to make cocktails">
 
   <!-- Define page title and link style / javascript files -->
@@ -19,6 +21,18 @@
   <header>
     <h1>Tasty Cocktail</h1>
   </header>
+
+  <!-- Page container holds main body content. Will react to page width -->
+  <div id="page_container">
+  
+	<!-- Filling cocktail glass animation -->
+    <div id="animation_box">
+      <img src="resources/logo_animation.png" alt="Tasty cocktail logo">
+      <div id="liquid">
+      </div>
+    </div>
+
+  </div>
 </body>
 
 </html>
