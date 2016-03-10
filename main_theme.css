@@ -1,11 +1,111 @@
-html, body{
+html, body {
   margin: 0px;
   background-color: #e6ddde;
 }
-header{
+header {
   height: 100vh;
   width: 100%;
+  text-align: center;
   background-size: cover;
   border-bottom: 2px solid #FFF;
   background-image: url('resources/header.jpg');
+}
+header h1 {
+  color: #FFF;
+  margin: 0px;
+  font-size: 40pt;
+  position: relative;
+  text-decoration: underline;
+  font-family: 'Courgette', cursive;
+  top: -webkit-calc(50vh - 57px);
+  top: expression(50vh - 57px);
+  top: -moz-calc(50vh - 57px);
+  top: -o-calc(50vh - 57px);
+  top: calc(50vh - 57px);
+}
+#page_container {
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
+}
+#animation_box {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  display: inline-block;
+}
+#animation_box img {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+}
+#animation_box #liquid {
+  position: relative;
+  bottom: 115px;
+  height: 40px;
+  width: 150px;
+  opacity: 0.3;
+  background-color: #916a70;
+  border-top: 1px solid #FFF;
+  -webkit-animation: drink 5s infinite;
+  -moz-animation: drink 5s infinite;
+  -o-animation: drink 5s infinite;
+  animation: drink 5s infinite;
+  z-index: 0;
+}
+
+/* Animations */
+@keyframes drink {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  70% {
+    transform: translate3d(0px, 25px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@-webkit-keyframes drink {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  70% {
+    transform: translate3d(0px, 25px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@-moz-keyframes drink {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  70% {
+    transform: translate3d(0px, 25px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@-o-keyframes drink {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  70% {
+    transform: translate3d(0px, 25px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+/* Title font */
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v4/BHG8ZtTfO0yYnp02--QxqltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
