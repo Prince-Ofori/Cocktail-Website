@@ -23,6 +23,34 @@ header h1 {
   top: -o-calc(50vh - 57px);
   top: calc(50vh - 57px);
 }
+#icon_container {
+  left: 0px;
+  width: 110px;
+  opacity: 0.6;
+  position: absolute;
+  background-color: #fff;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  top: -webkit-calc(100vh - 56.5px);
+  top: expression(100vh - 56.5px);
+  top: -moz-calc(100vh - 56.5px);
+  top: -o-calc(100vh - 56.5px);
+  top: calc(100vh - 56.5px);
+  transition: opacity 1s ease;
+}
+#icon_container img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+#icon_container a{
+  outline: none;
+  text-decoration: none;
+}
+#icon_container:hover{
+  opacity: 0.8;
+  transition: opacity 1s ease;
+}
 #page_container {
   margin: auto;
   max-width: 1000px;
@@ -35,24 +63,24 @@ header h1 {
   display: inline-block;
 }
 #animation_box img {
-  position: relative;
+  z-index: 1;
   height: 150px;
   width: 150px;
-  z-index: 1;
+  position: relative;
 }
 #animation_box #liquid {
-  position: relative;
+  z-index: 0;
   bottom: 115px;
   height: 40px;
   width: 150px;
   opacity: 0.3;
+  position: relative;
   background-color: #916a70;
   border-top: 1px solid #FFF;
   -webkit-animation: drink 5s infinite;
   -moz-animation: drink 5s infinite;
   -o-animation: drink 5s infinite;
   animation: drink 5s infinite;
-  z-index: 0;
 }
 
 /* Animations */
