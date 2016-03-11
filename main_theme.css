@@ -14,9 +14,9 @@ header h1 {
   color: #FFF;
   margin: 0px;
   font-size: 40pt;
+  font-weight: 100;
   position: relative;
-  text-decoration: underline;
-  font-family: 'Courgette', cursive;
+  font-family: 'Calibri', sans-serif;
   top: -webkit-calc(50vh - 57px);
   top: expression(50vh - 57px);
   top: -moz-calc(50vh - 57px);
@@ -43,11 +43,11 @@ header h1 {
   height: 30px;
   margin: 10px;
 }
-#icon_container a{
+#icon_container a {
   outline: none;
   text-decoration: none;
 }
-#icon_container:hover{
+#icon_container:hover {
   opacity: 0.8;
   transition: opacity 1s ease;
 }
@@ -84,6 +84,7 @@ header h1 {
 }
 
 /* Animations */
+
 @keyframes drink {
   0% {
     transform: translate3d(0px, 0px, 0px);
@@ -127,13 +128,4 @@ header h1 {
   100% {
     transform: translate3d(0px, 0px, 0px);
   }
-}
-
-/* Title font */
-@font-face {
-  font-family: 'Courgette';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v4/BHG8ZtTfO0yYnp02--QxqltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
