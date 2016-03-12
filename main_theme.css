@@ -13,9 +13,13 @@ header {
 header h1 {
   color: #FFF;
   margin: 0px;
-  font-size: 40pt;
-  font-weight: 100;
+  padding: 5px;
+  font-size: 55pt;
+  font-weight: 200;
   position: relative;
+  display: inline-block;
+  border: 5px solid #FFF;
+  background-color: rgba(0, 0, 0, 0.4);
   font-family: 'Calibri', sans-serif;
   top: -webkit-calc(50vh - 57px);
   top: expression(50vh - 57px);
