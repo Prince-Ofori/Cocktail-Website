@@ -60,6 +60,12 @@ header h1 {
   max-width: 1000px;
   text-align: center;
 }
+#page_container h2{
+  color: #916a70;
+  font-size: 25pt;
+  font-weight: lighter;
+  font-family: Calibri, sans-serif;
+}
 #animation_box {
   height: 150px;
   width: 150px;
@@ -86,9 +92,11 @@ header h1 {
   -o-animation: drink 5s infinite;
   animation: drink 5s infinite;
 }
+#page_container hr{
+  border: 1px solid #916a70;
+}
 
 /* Animations */
-
 @keyframes drink {
   0% {
     transform: translate3d(0px, 0px, 0px);
